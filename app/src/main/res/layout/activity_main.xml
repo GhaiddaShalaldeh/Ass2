@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bmi6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI calculator"
+        android:textSize="35dp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/simple_text"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:background="#FFC107"
+        android:hint="Enter Your Name"
+        android:layout_below="@+id/simple_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:id="@+id/et_name" />
+
+    <Spinner
+        android:id="@+id/spinnerG"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/simple_text"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="75dp"
+        android:background="#FFC107"
+        android:entries="@array/Gender" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:background="#FFC107"
+        android:hint="Enter Weight"
+        android:layout_below="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/et_weight" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:background="#FFC107"
+        android:hint="Enter Height"
+        android:layout_below="@+id/et_weight"
+        android:layout_alignLeft="@+id/et_weight"
+        android:layout_alignStart="@+id/et_weight"
+        android:layout_marginTop="46dp"
+        android:id="@+id/et_height" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="25dp"
+        android:textColor="#FF9800"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_height"
+        android:layout_marginTop="29dp"
+        android:id="@+id/tv_result"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textColor="#FFC107"
+        android:layout_below="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_result"
+        android:layout_marginTop="97dp"
+        android:onClick="btnOnClick"
+        android:text="Save Data"
+        android:textColor="#FFC107" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open activity 2"
+        android:textColor="#FFC107"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/button2" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="-45dp"
+        android:text="Remember me"
+        android:textColor="#FFC107"
+
+        />
+
+
+</RelativeLayout>
